@@ -6,6 +6,10 @@ require.config({
 	}
 });
 
-require([], function(){
-	console.log('yeah!');
+require([
+	'app'
+], function(App){
+	console.log('inside main!');
+
+	App.initialize();
 });
