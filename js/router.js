@@ -17,7 +17,7 @@ define([
 	var initialize = function(){
 		console.log('initializing router');
 
-		var appRouter = new AppRouter;
+		var appRouter = new AppRouter();
 		// report issue : missing 'route:'
 		appRouter.on('route:showProjects', function(){
 			console.log('showing projects');
